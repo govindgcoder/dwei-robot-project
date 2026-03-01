@@ -1,12 +1,13 @@
 # Dwei
 ## A gesture-controlled, two-wheeled self-balancing robot.
 
-This repository contains the Python-based physics simulation and Linear Quadratic Regulator (LQR) control environment. The primary goal of this simulation is to mathematically model the system's dynamics, derive the optimal gain matrix (K), and verify stability—effectively speeding up hardware development by eliminating blind trial-and-error tuning.
+This repository contains the Python-based physics simulation and Linear Quadratic Regulator (LQR) control environment. The primary goal of this simulation is to mathematically model the system's dynamics, derive the optimal gain matrix (K), and verify stability effectively speeding up hardware development by eliminating blind trial-and-error tuning.
 
 ### State-Space Representation
 
 The LQR controller relies on a linearized state-space model (x˙=Ax+Bu) to calculate the restorative motor forces. The chosen state vector for the feedback loop is:
 
+<img width="1209" height="847" alt="image" src="https://github.com/user-attachments/assets/b23620a6-9d69-4056-badd-f5018cc0135a" />
 
 ```
 x=[θ,θ˙,v,ψ˙]T
